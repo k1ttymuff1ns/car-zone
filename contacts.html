@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Контакти Car Zone — адреса, телефон, графік роботи</title>
+<meta name="description" content="Адреса, телефон і графік роботи Car Zone в Івано-Франківську. Форма зворотного зв'язку та карта проїзду.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&amp;family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="inner">
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Car Zone — на головну">Car <span>Zone</span></a>
+    <nav class="nav" id="nav" aria-label="Головне меню">
+      <ul class="nav-list">
+        <li><a class="nav-link" href="index.html">Головна</a></li>
+        <li><a class="nav-link" href="cars.html">Автопарк</a></li>
+        <li><a class="nav-link" href="about.html">Про нас</a></li>
+        <li><a class="nav-link active" href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Змінити тему"><svg class="icon"><use href="img/sprite.svg#icon-moon"></use></svg></button>
+      <button class="btn btn-outline" type="button" data-modal-open>Забронювати</button>
+      <button class="burger" id="burger" type="button" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <h1 class="title">Контакти</h1>
+      <p>Зв'яжіться з нами будь-яким зручним способом — ми відповідаємо швидко.</p>
+      <nav class="breadcrumbs" aria-label="Навігація"><a href="index.html">Головна</a><span>/</span><span>Контакти</span></nav>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container contacts-grid">
+      <div>
+        <h2 class="title reveal">Як нас знайти</h2>
+        <div class="contact-cards">
+          <div class="contact-card reveal"><span class="icon-box"><svg class="icon"><use href="img/sprite.svg#icon-location"></use></svg></span><div><h3>Адреса</h3><p>м. Івано-Франківськ, вул. Незалежності, 25</p></div></div>
+          <div class="contact-card reveal"><span class="icon-box"><svg class="icon"><use href="img/sprite.svg#icon-phone"></use></svg></span><div><h3>Телефон</h3><a href="tel:+380675553210">+380 (67) 555-32-10</a></div></div>
+          <div class="contact-card reveal"><span class="icon-box"><svg class="icon"><use href="img/sprite.svg#icon-mail"></use></svg></span><div><h3>Email</h3><a href="mailto:info@carzone.example">info@carzone.example</a></div></div>
+          <div class="contact-card reveal"><span class="icon-box"><svg class="icon"><use href="img/sprite.svg#icon-clock"></use></svg></span><div><h3>Графік роботи</h3><p>Щодня з 8:00 до 21:00</p></div></div>
+        </div>
+        <button class="btn btn-outline geo-btn" id="geoBtn" type="button">Визначити відстань до офісу</button>
+        <p class="geo-result" id="geoResult"></p>
+      </div>
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <h2 class="title">Напишіть нам</h2>
+        <input class="field" type="text" name="name" placeholder="Ваше ім'я" aria-label="Ваше ім'я" required>
+        <input class="field" type="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required>
+        <input class="field" type="tel" name="phone" placeholder="Номер телефону" aria-label="Номер телефону" required>
+        <textarea class="field" name="message" placeholder="Ваше повідомлення" aria-label="Ваше повідомлення" required></textarea>
+        <button class="btn" type="submit">Надіслати</button>
+        <p class="form-msg" role="status"></p>
+      </form>
+    </div>
+    <div class="container">
+      <iframe class="map" title="Карта розташування офісу Car Zone" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=24.700%2C48.915%2C24.730%2C48.930&amp;layer=mapnik&amp;marker=48.9226%2C24.7111"></iframe>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-cta">
+      <h2 class="title">Ласкаво просимо до Car Zone</h2>
+      <a href="cars.html" class="btn">Обрати авто</a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">Car <span>Zone</span></a>
+        <p>Прокат автомобілів в Івано-Франківську з 2019 року. Працюємо щодня з 8:00 до 21:00.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="img/sprite.svg#icon-facebook"></use></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="img/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="https://telegram.org/" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon"><use href="img/sprite.svg#icon-telegram"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Меню</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cars.html">Автопарк</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Клієнтам</h4>
+        <ul class="footer-links">
+          <li><a href="cars.html">Ціни</a></li>
+          <li><a href="about.html">Відгуки</a></li>
+          <li><a href="contacts.html">Підтримка</a></li>
+        </ul>
+      </div>
+      <div class="subscribe">
+        <h4>Будьте на зв'язку</h4>
+        <form id="subscribeForm" novalidate>
+          <input type="email" name="email" placeholder="Ваш email" aria-label="Email для підписки" required>
+          <button class="btn" type="submit">Підписатися</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Car Zone. Курсовий проєкт — Василишин С. Р., група ПІ(3)-24</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" aria-label="Закрити" data-modal-close>&times;</button>
+    <h2 class="title" id="modalTitle">Бронювання авто</h2>
+    <p>Залиште заявку — ми передзвонимо та підтвердимо бронювання.</p>
+    <form id="modalForm" novalidate>
+      <input class="field" type="text" name="name" placeholder="Ваше ім'я" aria-label="Ваше ім'я" required>
+      <input class="field" type="tel" name="phone" placeholder="Номер телефону" aria-label="Номер телефону" required>
+      <select class="field car-select" name="car" aria-label="Оберіть автомобіль" required>
+        <option value="">Оберіть автомобіль</option>
+      </select>
+      <input class="field" type="date" name="from" aria-label="Дата отримання" required>
+      <button class="btn" type="submit">Забронювати</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" type="button" aria-label="Закрити">&times;</button>
+  <button class="lb-prev" type="button" aria-label="Попереднє фото"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+  <img src="img/gallery/gallery-1.webp" alt="Фото автомобіля" width="800" height="560">
+  <button class="lb-next" type="button" aria-label="Наступне фото"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Нагору"><svg class="icon"><use href="img/sprite.svg#icon-up"></use></svg></button>
+
+<script src="js/main.js"></script>
+<script src="js/render.js"></script>
+<script src="js/contacts.js"></script>
+</body>
+</html>

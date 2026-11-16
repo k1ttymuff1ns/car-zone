@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Zone — прокат автомобілів в Івано-Франківську</title>
+<meta name="description" content="Прокат автомобілів Car Zone в Івано-Франківську: ретро, бізнес та позашляховики. Онлайн-бронювання, чисті авто та чесні ціни.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&amp;family=Inter:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Car Zone — на головну">Car <span>Zone</span></a>
+    <nav class="nav" id="nav" aria-label="Головне меню">
+      <ul class="nav-list">
+        <li><a class="nav-link active" href="index.html">Головна</a></li>
+        <li><a class="nav-link" href="cars.html">Автопарк</a></li>
+        <li><a class="nav-link" href="about.html">Про нас</a></li>
+        <li><a class="nav-link" href="contacts.html">Контакти</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <button class="theme-btn" id="themeBtn" type="button" aria-label="Змінити тему"><svg class="icon"><use href="img/sprite.svg#icon-moon"></use></svg></button>
+      <button class="btn btn-outline" type="button" data-modal-open>Забронювати</button>
+      <button class="burger" id="burger" type="button" aria-label="Відкрити меню"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <h1 class="title hero-title reveal">Найкращий прокат <span class="indent">авто та сервіс</span></h1>
+      <div class="hero-grid">
+        <div class="oval first reveal"><img src="img/hero-1.webp" alt="Помаранчевий ретро-автомобіль на вулиці міста" width="640" height="400"></div>
+        <div class="oval second reveal"><img src="img/hero-2.webp" alt="Яскравий автомобіль для оренди на вихідні" width="640" height="400"></div>
+        <div class="hero-text reveal">
+          <p>Car Zone — сервіс прокату автомобілів в Івано-Франківську. У нашому автопарку понад 40 авто: від доступних міських моделей до класичних ретро-кабріолетів для фотосесій і весіль. Бронюйте онлайн за кілька хвилин.</p>
+          <a href="cars.html" class="btn">Переглянути автопарк</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why">
+    <span class="ghost-title" aria-hidden="true">Чому ми?</span>
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="title">Чому обирають нас?</h2>
+        <p>Ми дбаємо про кожну деталь: від чистоти салону до швидкої видачі авто в будь-який час доби.</p>
+      </div>
+      <div class="cards" id="services"></div>
+    </div>
+  </section>
+
+  <section class="section book blur-bg" id="book">
+    <div class="container book-grid">
+      <div class="reveal">
+        <h2 class="title">Забронюйте авто</h2>
+        <p class="hero-text">Заповніть форму, і наш менеджер зв'яжеться з вами протягом 15 хвилин для підтвердження бронювання.</p>
+        <form class="book-form" id="bookForm" novalidate>
+          <input class="field" type="text" name="name" placeholder="Ваше ім'я" aria-label="Ваше ім'я" required>
+          <input class="field" type="email" name="email" placeholder="Ваш email" aria-label="Ваш email" required>
+          <input class="field" type="tel" name="phone" placeholder="Номер телефону" aria-label="Номер телефону" required>
+          <select class="field car-select" name="car" aria-label="Оберіть автомобіль" required>
+            <option value="">Оберіть автомобіль</option>
+          </select>
+          <input class="field" type="date" name="from" aria-label="Дата отримання" required>
+          <input class="field" type="date" name="to" aria-label="Дата повернення" required>
+          <button class="btn" type="submit">Надіслати запит</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+      <div class="book-image reveal">
+        <img src="img/book.webp" alt="Червоний автомобіль біля будинку" width="640" height="560" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="title">Комфортні авто для подорожей!</h2>
+        <p>Усі автомобілі застраховані, регулярно проходять техогляд і готові до далеких поїздок.</p>
+      </div>
+      <div class="comfort-grid">
+        <div class="comfort-main reveal"><img src="img/comfort-1.webp" alt="Ретро-автомобіль біля жовтої стіни" width="480" height="640" loading="lazy"></div>
+        <div class="comfort-text reveal">
+          <p>Ми підберемо авто під будь-яку подію: ділову зустріч, сімейну відпустку в Карпатах, романтичну прогулянку чи весільний кортеж.</p>
+          <p>До кожного автомобіля можна замовити дитяче крісло, GPS-навігатор, багажник на дах і доставку за вказаною адресою.</p>
+        </div>
+        <div class="collage reveal" id="collage">
+          <img class="c-round" src="img/comfort-2.webp" alt="Жовтий автомобіль на старій вулиці" width="420" height="480" loading="lazy">
+          <img src="img/comfort-3.webp" alt="Червоне авто, вигляд збоку" width="420" height="420" loading="lazy">
+          <img class="c-wide" src="img/comfort-4.webp" alt="Автомобіль з багажником на даху" width="640" height="300" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="container">
+      <div class="band-head reveal">
+        <h2 class="title">Авто для особливих подій!</h2>
+        <p>Ретро-автомобілі Car Zone — ідеальний вибір для весіль, фотосесій та тематичних вечірок. Кожне авто відреставроване та повністю справне, а водій за бажанням допоможе з маршрутом.</p>
+      </div>
+      <div class="band-photo reveal">
+        <img class="band-main" src="img/band-car.webp" alt="Помаранчевий класичний автомобіль біля будинку" width="1200" height="560" loading="lazy">
+        <img class="band-small s1" src="img/band-small-1.webp" alt="Ретро-авто, вигляд спереду" width="320" height="240" loading="lazy">
+        <img class="band-small s2" src="img/band-small-2.webp" alt="Жовтий ретро-автомобіль" width="320" height="240" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2 class="title">Наша команда</h2>
+        <p>Досвідчені менеджери та механіки, які подбають про ваш комфорт від бронювання до повернення авто.</p>
+      </div>
+      <div class="staff-grid" id="team" data-limit="3"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="reviews-head reveal">
+        <h2 class="title">Відгуки наших клієнтів</h2>
+        <p>Понад 2000 задоволених клієнтів за останні три роки. Ось що вони кажуть про Car Zone.</p>
+      </div>
+      <div class="slider" id="reviewsSlider">
+        <div class="slider-track" id="reviews"></div>
+      </div>
+      <div class="slider-controls">
+        <button class="slider-btn prev" type="button" aria-label="Попередній відгук"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+        <div class="dots" id="dots"></div>
+        <button class="slider-btn next" type="button" aria-label="Наступний відгук"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-cta">
+      <h2 class="title">Ласкаво просимо до Car Zone</h2>
+      <a href="cars.html" class="btn">Обрати авто</a>
+    </div>
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a href="index.html" class="logo">Car <span>Zone</span></a>
+        <p>Прокат автомобілів в Івано-Франківську з 2019 року. Працюємо щодня з 8:00 до 21:00.</p>
+        <div class="socials">
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><svg class="icon"><use href="img/sprite.svg#icon-facebook"></use></svg></a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><svg class="icon"><use href="img/sprite.svg#icon-instagram"></use></svg></a>
+          <a href="https://telegram.org/" target="_blank" rel="noopener" aria-label="Telegram"><svg class="icon"><use href="img/sprite.svg#icon-telegram"></use></svg></a>
+        </div>
+      </div>
+      <div>
+        <h4>Меню</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="cars.html">Автопарк</a></li>
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Клієнтам</h4>
+        <ul class="footer-links">
+          <li><a href="cars.html">Ціни</a></li>
+          <li><a href="about.html">Відгуки</a></li>
+          <li><a href="contacts.html">Підтримка</a></li>
+        </ul>
+      </div>
+      <div class="subscribe">
+        <h4>Будьте на зв'язку</h4>
+        <form id="subscribeForm" novalidate>
+          <input type="email" name="email" placeholder="Ваш email" aria-label="Email для підписки" required>
+          <button class="btn" type="submit">Підписатися</button>
+          <p class="form-msg" role="status"></p>
+        </form>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Car Zone. Курсовий проєкт — Василишин С. Р., група ПІ(3)-24</p>
+  </div>
+</footer>
+
+<div class="modal" id="modal" aria-hidden="true">
+  <div class="modal-window" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="modal-close" type="button" aria-label="Закрити" data-modal-close>&times;</button>
+    <h2 class="title" id="modalTitle">Бронювання авто</h2>
+    <p>Залиште заявку — ми передзвонимо та підтвердимо бронювання.</p>
+    <form id="modalForm" novalidate>
+      <input class="field" type="text" name="name" placeholder="Ваше ім'я" aria-label="Ваше ім'я" required>
+      <input class="field" type="tel" name="phone" placeholder="Номер телефону" aria-label="Номер телефону" required>
+      <select class="field car-select" name="car" aria-label="Оберіть автомобіль" required>
+        <option value="">Оберіть автомобіль</option>
+      </select>
+      <input class="field" type="date" name="from" aria-label="Дата отримання" required>
+      <button class="btn" type="submit">Забронювати</button>
+      <p class="form-msg" role="status"></p>
+    </form>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-close" type="button" aria-label="Закрити">&times;</button>
+  <button class="lb-prev" type="button" aria-label="Попереднє фото"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+  <img src="img/gallery/gallery-1.webp" alt="Фото автомобіля" width="800" height="560">
+  <button class="lb-next" type="button" aria-label="Наступне фото"><svg class="icon"><use href="img/sprite.svg#icon-arrow"></use></svg></button>
+</div>
+
+<button class="to-top" id="toTop" type="button" aria-label="Нагору"><svg class="icon"><use href="img/sprite.svg#icon-up"></use></svg></button>
+
+<script src="js/main.js"></script>
+<script src="js/render.js"></script>
+<script src="js/slider.js"></script>
+</body>
+</html>

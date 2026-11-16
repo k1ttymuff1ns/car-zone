@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Fiat 500 Retro",
+    "class": "retro",
+    "price": 1200,
+    "year": 1968,
+    "seats": 4,
+    "gear": "механіка",
+    "fuel": "бензин",
+    "image": "img/cars/car-1.webp",
+    "desc": "Легендарний італійський малюк для фотосесій та прогулянок містом."
+  },
+  {
+    "id": 2,
+    "name": "Toyota Camry",
+    "class": "comfort",
+    "price": 1800,
+    "year": 2022,
+    "seats": 5,
+    "gear": "автомат",
+    "fuel": "гібрид",
+    "image": "img/cars/car-2.webp",
+    "desc": "Комфортний седан бізнес-класу для ділових поїздок."
+  },
+  {
+    "id": 3,
+    "name": "Volkswagen Multivan",
+    "class": "suv",
+    "price": 2600,
+    "year": 2021,
+    "seats": 7,
+    "gear": "автомат",
+    "fuel": "дизель",
+    "image": "img/cars/car-3.webp",
+    "desc": "Просторий мінівен для сімейних подорожей і великих компаній."
+  },
+  {
+    "id": 4,
+    "name": "Skoda Octavia",
+    "class": "economy",
+    "price": 950,
+    "year": 2020,
+    "seats": 5,
+    "gear": "механіка",
+    "fuel": "бензин",
+    "image": "img/cars/car-4.webp",
+    "desc": "Економічний і надійний автомобіль на кожен день."
+  },
+  {
+    "id": 5,
+    "name": "Mazda MX-5",
+    "class": "comfort",
+    "price": 2200,
+    "year": 2023,
+    "seats": 2,
+    "gear": "механіка",
+    "fuel": "бензин",
+    "image": "img/cars/car-5.webp",
+    "desc": "Кабріолет для яскравих вихідних і поїздок у Карпати."
+  },
+  {
+    "id": 6,
+    "name": "Toyota Land Cruiser Prado",
+    "class": "suv",
+    "price": 3200,
+    "year": 2022,
+    "seats": 7,
+    "gear": "автомат",
+    "fuel": "дизель",
+    "image": "img/cars/car-6.webp",
+    "desc": "Потужний позашляховик для гірських доріг."
+  },
+  {
+    "id": 7,
+    "name": "Renault Logan",
+    "class": "economy",
+    "price": 750,
+    "year": 2019,
+    "seats": 5,
+    "gear": "механіка",
+    "fuel": "бензин",
+    "image": "img/cars/car-7.webp",
+    "desc": "Найдоступніший варіант для поїздок містом."
+  },
+  {
+    "id": 8,
+    "name": "Volkswagen Beetle Classic",
+    "class": "retro",
+    "price": 1400,
+    "year": 1972,
+    "seats": 4,
+    "gear": "механіка",
+    "fuel": "бензин",
+    "image": "img/cars/car-8.webp",
+    "desc": "Культовий «Жук» для весіль та тематичних фотосесій."
+  },
+  {
+    "id": 9,
+    "name": "Tesla Model 3",
+    "class": "comfort",
+    "price": 2400,
+    "year": 2023,
+    "seats": 5,
+    "gear": "автомат",
+    "fuel": "електро",
+    "image": "img/cars/car-9.webp",
+    "desc": "Електромобіль із запасом ходу понад 500 км."
+  },
+  {
+    "id": 10,
+    "name": "Mercedes-Benz 280 SL Pagoda",
+    "class": "retro",
+    "price": 2900,
+    "year": 1969,
+    "seats": 2,
+    "gear": "автомат",
+    "fuel": "бензин",
+    "image": "img/cars/car-10.webp",
+    "desc": "Розкішний класичний родстер для особливих подій."
+  }
+]
